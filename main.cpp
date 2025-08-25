@@ -31,12 +31,12 @@ int main() {
         }
         
         auto end = std::chrono::high_resolution_clock::now();
-        auto timeTaken = std::chrono::duration_cast<std::chrono::milliseconds>(end-start).count();
+        auto timeTaken = std::chrono::duration_cast<std::chrono::nanoseconds>(end-start).count();
 
         std::cout<<"Steps (N): "<< N
         << " | Trial (M): " << trial
         << " | Final Position (D): " << pos
-        << " | Time (ms): " << timeTaken << std::endl;
+        << " | Time (nanoseconds): " << timeTaken << std::endl;
 
       }
   }
